@@ -1,0 +1,8 @@
+<%= link_to feed.user.name, feed.user %>
+<%= covert_to_past_tens(feed.action) + ' a' %>
+<% if feed.trackable %>
+    <%= link_to feed.trackable_type, feed.trackable %>
+<% else %>
+    <%= feed.trackable_type + ' (Which has been removed)' %>
+<% end %>
+
